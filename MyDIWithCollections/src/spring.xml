@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans spring-beans-4.3.xsd ">
+
+<bean id="app" class="util.Application">
+	<property name="service" ref="messageService"></property>
+</bean>
+
+<bean id="messageService" class="service.MessageServiceImpl">
+	<constructor-arg>
+		<set>
+			<value>Hello World</value>
+			<value>Hello World</value>
+			<value>Hello Spring</value>
+			<value>Welcome to Spring DI</value>
+		</set>
+	</constructor-arg>
+</bean>
+
+
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans spring-beans-4.3.xsd ">
+
+<bean id="callAxis" class="app.Application">
+<property name="service" ref="Axis"></property>
+</bean>
+
+<bean id="callSBI" class="app.Application">
+<property name="service" ref="SBI"></property>
+</bean>
+
+<bean id="Axis" class="dao.Axis">
+
+</bean>
+
+<bean id="SBI" class="dao.SBI">
+
+</bean>
+
+
+
+</beans>
